@@ -1,6 +1,14 @@
+"use client"
 import React from 'react';
 import styles from '@/app/styles/department.module.css'
-const page = () => {
+import { useRouter } from 'next/navigation';
+const Success = () => {
+    const router = useRouter()
+    const handleUpload = (e) =>{
+        setTimeout(() => {
+            router.push('/success')
+        }, 2000);
+    }
     return (
         <div>
             <div className='container'>
@@ -9,7 +17,7 @@ const page = () => {
                     <div className={`${styles.uploadCon} drop-shadow-2xl rounded-lg bg-white`}>
                         <div>
                             <label htmlFor='filetype'>Upload a file</label>
-                            <input type='file' id='filetype' className='hidden' />
+                            <input onChange={() => handleUpload()} type='file' id='filetype' className='hidden' />
                         </div>
                     </div>
                 </div>
@@ -18,4 +26,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Success;
