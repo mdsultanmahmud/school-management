@@ -40,19 +40,24 @@ const HomeCom = () => {
                                     <p>Department</p>
                                 </div>
                             </Link>
-
-                            <div className={`${styles.sector}`}>
-                                <h3>2</h3>
-                                <p>Notice</p>
-                            </div>
-                            <div className={`${styles.sector}`}>
-                                <h3>3</h3>
-                                <p>Knowledge</p>
-                            </div>
-                            <div className={`${styles.sector}`}>
-                                <h3>4</h3>
-                                <p>Polices</p>
-                            </div>
+                            <Link href={'/department'}>
+                                <div className={`${styles.sector}`}>
+                                    <h3>2</h3>
+                                    <p>Notice</p>
+                                </div>
+                            </Link>
+                            <Link href={'/department'}>
+                                <div className={`${styles.sector}`}>
+                                    <h3>3</h3>
+                                    <p>Knowledge</p>
+                                </div>
+                            </Link>
+                            <Link href={'/department'}>
+                                <div className={`${styles.sector}`}>
+                                    <h3>4</h3>
+                                    <p>Polices</p>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </div>
