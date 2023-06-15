@@ -1,0 +1,54 @@
+.title {
+    color: red;
+    font-size: 20px;
+}
+
+.drawer {
+    padding: 1.2rem .5rem;
+    background-image: linear-gradient(rgba(224, 78, 203, 1), rgba(187, 80, 251, 1));
+    z-index: 5;
+    height: 100vh;
+}
+
+.drawer ul li {
+    display: flex;
+    column-gap: 8px;
+    margin-top: 20px;
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.drawer ul li img {
+    width: 25px;
+    height: 28px;
+}
+
+.sector {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.4rem 1rem;
+    height: 272px;
+    width: 279px;
+    position: relative;
+    cursor: pointer;
+}
+.active {
+    background-color:rgba(163, 35, 141, 1);
+}
+.active h3{
+    font-size: 64px;
+    color: white !important;
+}
+.sector h3{
+    font-size: 64px;
+    color: rgba(163, 35, 141, 1);
+}
+.sector p {
+    font-size: 26px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,45 @@
+.uploadCon {
+    width: 956px;
+    height: 649px;
+    display: grid;
+    place-items: center;
+}
+
+.uploadCon div {
+    background-color: #A3238D;
+    height: 266px;
+    width: 279px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+
+}
+
+.uploadCon label {
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
+/* success page design here  */
+.successCon {
+    text-align: center;
+}
+
+.successCon img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.successCon p {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    background: linear-gradient(to right, rgba(36, 61, 196, 1), rgba(132, 19, 185, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
