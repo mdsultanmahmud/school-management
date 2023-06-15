@@ -15,24 +15,31 @@ const HomeCom = () => {
           <div
             className={`hidden md:block md:w-[250px] max-w-[330px] ${styles.drawer}`}
           >
-            <ul>
-              <li>
-                <Image src={department} alt="img" height={26} width={25} />
-                <span>Department</span>
-              </li>
-              <li>
-                <Image src={knowledge} alt="img" height={26} width={25} />
-                <span>Notice</span>
-              </li>
-              <li>
-                <Image src={notice} alt="img" height={26} width={25} />
-                <span>Notice</span>
-              </li>
-              <li>
-                <Image src={policy} alt="img" height={26} width={25} />
-                <span>Polices</span>
-              </li>
-            </ul>
+            <div className={`${styles.drawerHeader} text-xl`}>
+              <h2>ADMIN</h2>
+              <h2>DASHBOARD</h2>
+            </div>
+            {/* menu */}
+            <div className={`${styles.drawerMenuBox}`}>
+              <ul>
+                <li>
+                  <Image src={department} alt="img" height={26} width={25} />
+                  <span>Department</span>
+                </li>
+                <li>
+                  <Image src={knowledge} alt="img" height={26} width={25} />
+                  <span>Notice</span>
+                </li>
+                <li>
+                  <Image src={notice} alt="img" height={26} width={25} />
+                  <span>Notice</span>
+                </li>
+                <li>
+                  <Image src={policy} alt="img" height={26} width={25} />
+                  <span>Polices</span>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className={`p-0 md:p-5 lg:p-16`}>
             <div className="grid justify-center items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
